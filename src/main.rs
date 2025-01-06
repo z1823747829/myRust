@@ -1,6 +1,8 @@
-mod guess_num;
+mod guessing_game;
+mod variables;
 
 fn main() {
     println!("Hello, world!");
-    guess_num::main();
+    // guessing_game::main();
+variables::main();
 }
