@@ -1,38 +1,15 @@
-struct Point {
-    x: i32,
-    y: i32,
-}
-impl Point {
-    fn new(x: i32, y: i32) -> Point {
-        Point { x: x, y: y }
-    }
-
-    fn origin() -> Point {
-        Point { x: 0, y: 0 }
-    }
-
-    fn set_x(&mut self, x: i32) {
-        self.x = x;
-    }
-
-    fn set_y(&mut self, y: i32) {
-        self.y = y;
-    }
-
-    fn get_x(&self) -> i32 {
-        self.x
-    }
-    fn get_y(&self) -> i32 {
-        self.y
-    }
-}
 pub(crate) fn main() {
-    let x=5;
-    println!("The value of x is: {}", x);
-    let x=6;
-    println!("The value of x is: {}", x);
-    const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3;
-    println!("The value of x is: {}", THREE_HOURS_IN_SECONDS);
-    let p=Point::new(3, 4);
-    println!("The value of x is: {},{}",p.x,p.y);
+    let x1=5;
+    let x2:i64=6;
+    let x3=7.0;
+    println!("{x1}+{x2}+{x3}={}",x1 as f64 + x2 as f64 +x3);
+    let x4=true;
+    println!("x4={x4}");
+    let x5='5';
+    let x6="6";
+    println!("x5={x5},x6={x6}");
+    let x7=(11,22,33);
+    println!("{},{},{}",x7.0,x7.1,x7.2);
+    let x8=[8;10];
+    println!("{:?}",x8);
 }

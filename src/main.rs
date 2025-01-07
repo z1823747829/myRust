@@ -4,5 +4,5 @@ mod variables;
 fn main() {
     println!("Hello, world!");
     // guessing_game::main();
-variables::main();
+    variables::main();
 }
